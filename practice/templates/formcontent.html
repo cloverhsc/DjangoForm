@@ -1,0 +1,7 @@
+{% for m in data %}
+<div class="message">
+  <p>{{ m.name }}</p>
+  <h5>{{ m.title }}</h5>
+  <div>{{ m.content|linebreaks }}</div>
+</div>
+{% endfor %}

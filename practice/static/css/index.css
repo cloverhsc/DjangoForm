@@ -1,0 +1,279 @@
+@charset "UTF-8";
+/*---- content ----*/
+	#content_body{
+		margin:0px auto;
+		width:100%;
+	}
+	.subject{
+		width:100%;
+		margin:0px auto;
+	}
+	/* filter background image*/
+	#filter{
+		background: rgba(36, 36, 36, 0.27) none repeat scroll 0% 0%;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		position: absolute;
+		top: 0px;
+		height: 500px;
+		width: 100%;
+	}
+
+	/* slogan */
+	#bg_img{
+		background:url(../image/index_bk.jpeg) no-repeat center top scroll;
+		background-size:cover;
+		height:500px;
+		display: flex;
+		justify-content:flex-end;
+		align-items:center;
+	}
+	#introduction{
+		color:#fff;
+		z-index: 1;
+		margin-top:100px;
+	}
+	#slogan {
+		font-size:2em;
+		border-bottom: 1px solid #fff;
+	}
+	#slogan p{
+		padding-left: 5px;
+		display: block;
+		margin-bottom: 10px;
+		font-family: "Rozha One" ,Arial,Verdana,sans-serif;
+	}
+	article p{
+		padding-left: 5px;
+		font-size: 1em;
+		font-weight: bold;
+		line-height: 25px;
+	}
+/*----- direction -----*/
+.directions{
+	margin:0px auto;
+	background: #fff;
+	height:300px;
+}
+.title{
+	text-transform: capitalize;
+	font-size: 1.3em;
+	border-bottom: 2px solid #CCC;
+	padding-top:20px;
+	height:50px;
+}
+.title p{
+	padding-left:15px;
+}
+.content{
+	height:250px;
+	margin:0px auto;
+	padding:10px;
+}
+.content p{
+	font-weight: normal;
+	height:190px;
+}
+/*---- productions ----*/
+.product{
+	margin:0px auto;
+	background:#E4E4E4;
+}
+.productions{
+	height:330px;
+	border-bottom: 2px solid #fff;
+}
+.productions_title{
+	font-size: 1.1em;
+	height: 25px;
+	width: 70%;
+	border-bottom: 1px solid #ccc;
+	float: right;
+}
+.productions_image{
+	width: 100%;
+	height: 130px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.productions_image > img{
+	height: 100%;
+	padding: 5px 0px;
+}
+.productions_intrd{
+	font-size: 0.8em;
+	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	height: 173px;
+	width:300px;
+	align-items: center;
+	position: relative;
+	margin:0px auto;
+}
+.productions_intrd > span{
+	padding:5px 0px;
+	height: 133px;
+	overflow : auto;
+
+}
+
+@media only screen and (min-width:550px){
+	#slogan p{
+		display:inline;
+	}
+	#slogan p:first-child{
+		padding-left: 5px;
+	}
+	#slogan p:last-child{
+		margin-right:20px;
+	}
+
+	.content, .productions_intrd{
+		width:450px;
+
+	}
+}
+
+@media only screen and (min-width:768px){
+/*---- Top navigator ----*/
+	/* BIOTRUMP */
+	#header{
+		position: absolute;
+		z-index: 5;
+	}
+	#we-are{
+		background:transparent;
+	}
+	#we-are > a > span{
+		color:#fff;
+	}
+	/* navigator */
+	#nav{
+		background: transparent;
+	}
+	.tie1-a{
+		color:#fff;
+	}
+	.triangle{
+		border-color: #FFF transparent transparent;
+	}
+
+/*---- content ----*/
+	/* slogan */
+	#bg_img{
+		height:768px;
+	}
+	#slogan {
+		font-size:2.5em;
+	}
+	#slogan p{
+		margin-bottom: 5px;
+	}
+	#introduction article{
+		margin-top:5px;
+	}
+	article p{
+		font-size: 1em;
+		margin: 0px auto;
+	}
+	#filter{
+		height:768px;
+	}
+	/* block */
+	.block{
+		max-width:100%;
+	}
+	.content {
+		width:650px;
+		padding:10px 0px;
+	}
+	.button{
+		width:300px;
+	}
+	.productions{
+		height:450px;
+	}
+	.productions_title{
+		height:40px;
+		padding:10px;
+	}
+	.productions_image{
+		height:200px;
+	}
+	.productions_intrd{
+		height:200px;
+		width: 650px;
+		margin: 0px auto;
+		font-size:1em;
+	}
+	.productions_intrd > span{
+		padding:10px 0px;
+	}
+}
+@media only screen and (min-width:961px){
+	#bg_img,#filter{
+		height:961px;
+	}
+	#content_body{
+		/*width: 100%;*/
+		max-width: 100%;
+	}
+/*---- Slogan ----*/
+	#introduction{
+		width:70%;
+	}
+	#slogan{
+		font-size:2.7em;
+	}
+	#slogan p:last-child{
+		margin-right:50px;
+	}
+/*---- content ----*/
+	/* direction */
+	.directions{
+		height: 450px;
+	}
+
+	.title{
+		height: 70px;
+		font-size:2em;
+		padding-top:30px;
+		width:100%;
+	}
+
+	.content{
+		font-size: 1.3em;
+		height: 380px;
+		width:900px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	/* productions */
+	.product{
+		height:550px;
+	}
+	.productions{
+		position: relative;
+		width:45%;
+		margin:0px 2.2%;
+		display: inline-block;
+		border:none;
+		font-size:1.1em;
+	}
+	.productions_image{
+		border-right:1px solid #ccc;
+	}
+	.productions_intrd{
+		width:100%;
+	}
+	.productions_intrd > span {
+		position: relative;
+		padding:10px 20px;
+	}
+
+}
